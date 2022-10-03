@@ -162,6 +162,7 @@ img{
 
 .iten-contakt{
     display: flex;
+    
     justify-content: center;
     gap: 10px;
 }
@@ -404,6 +405,7 @@ letter-spacing: 0.03em;
     align-items: center;
     justify-content: center;
     color:  var(--back-color);
+    margin-bottom: 30px;
 }
 .soc-link:hover, .soc-link:focus{
     color: var(--back-color);
@@ -594,6 +596,7 @@ letter-spacing: 0.03em;
     margin-bottom: 94px;
     column-gap: 30px;
 
+
   }
 
 .customers-box{
@@ -601,6 +604,8 @@ letter-spacing: 0.03em;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    justify-content: center;
+    align-items: center;
 }
 
 
