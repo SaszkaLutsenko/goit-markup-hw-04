@@ -63,8 +63,9 @@ img{
     padding-left: 15px;
     padding-right: 15px;
     
-   
 }
+
+
 /*header*/
 .site-nav.up{
     display: flex; 
@@ -159,6 +160,11 @@ img{
     color:var(--primery-text-colot);
 }
 
+.iten-contakt{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 
 
 /*hero*/
@@ -374,15 +380,18 @@ letter-spacing: 0.03em;
 
 
 .downpicture{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--back-color);
     margin-right: 30px;
     text-align: center;
 }
 .soc-list{
-    margin: 0 32px 30px 32px;
+    
     display: flex;
     justify-content: center;
     gap: 10px;
+
+    
     
     
 }
@@ -391,11 +400,15 @@ letter-spacing: 0.03em;
     height: 44px;
     display: flex;
     border-radius: 50%;
-    background-color: var(--bgr-staff);
-   
-    
+    background-color: currentColor;
+    align-items: center;
+    justify-content: center;
+    color:  var(--back-color);
 }
-
+.soc-link:hover, .soc-link:focus{
+    color: var(--back-color);
+    background-color: var(--button-color);
+}
 
 
 .downpicture:nth-child(4n){
@@ -406,6 +419,7 @@ letter-spacing: 0.03em;
 .darkside.footer{
     padding-top: 60px;
     padding-bottom: 60px;
+    
 }
 
 .site-logo.down{
@@ -466,6 +480,33 @@ letter-spacing: 0.03em;
     
 }
 
+.text-footer{
+    width: 700;
+    size: 14px;
+    height: 1.17;
+    color: var(--back-color);
+    margin-bottom: 20px;
+}
+.box.footer{
+    margin-top: -44px;
+}
+
+.soc-list.down{
+    justify-content: start;
+}
+.soc-link.down{
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.soc-icon.down{
+    fill:var(--back-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.information.footer{
+    display: flex;
+    gap: 156px;
+    align-items: baseline;
+}
 /*portfolio*/
 
 .list.portfolio{
@@ -547,12 +588,20 @@ letter-spacing: 0.03em;
 
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
     margin-bottom: 94px;
+    column-gap: 30px;
 
   }
-  
+
+.customers-box{
+  width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
 
 
 
