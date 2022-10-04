@@ -15,6 +15,7 @@ html{
     --contact-color: #757575;
     --white-whis-transparency: rgba(255, 255, 255, 0.6);
     --bgr-staff: #F5F4FA;
+    --soc-link: #AFB1B8;
     
 }
 
@@ -125,19 +126,28 @@ img{
 }
 
 .icon-envelope{
-    margin-right: 10px;
-    fill: currentColor;
+     fill: currentColor;
 
 }
 .icon-smartphone{
-    width: 10px;
-    height: 12px;
     fill: currentColor;
+}
+.iten-contakt.envelope:hover,
+.iten-contakt.envelope:focus{
+    color: var(--button-color);
+    fill: var(--button-color);
+
+}
+.iten-contakt.smartphone:hover,
+.iten-contakt.smartphone:focus{
+    color: var(--button-color);
+    fill: var(--button-color);
 }
 
 .navigetion.plus:hover,
 .navigetion.plus:focus{
-    color: var(--button-color)
+    color: var(--button-color);
+    fill: var(--button-color);
 }
 
 .contakt.mee {
@@ -162,10 +172,22 @@ img{
 
 .iten-contakt{
     display: flex;
-
+    
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
+.me.envelope{
+    display: block;
+}
+.icon-envelope{
+    margin-right: 10px;
+}
+
+.icon-smartphone{
+    margin-left: 30px;
+}
+
 
 
 /*hero*/
@@ -249,6 +271,8 @@ img{
 .btn.secondary:active{
     background-color: var(--button-color);
     color: var(--back-color);
+    box-shadow: 0 4px
+    rgba(0, 2, 2, 0.12);
 }
 
 .darkside{
@@ -406,12 +430,24 @@ letter-spacing: 0.03em;
     align-items: center;
     justify-content: center;
     color:  var(--back-color);
+    fill:var(--soc-link)
     
 }
-.soc-link:hover, .soc-link:focus{
-    color: var(--back-color);
-    background-color: var(--button-color);
+.soc-icon{
+    fill: var(--soc-link);
 }
+
+
+
+.soc-link:hover, .soc-link:focus{
+    color: var(--button-color);
+   
+}
+.soc-link:hover > .soc-icon,
+.soc-link:focus > .soc-icon{
+    fill: var(--back-color);
+}
+
 
 
 .downpicture:nth-child(4n){
@@ -498,17 +534,23 @@ letter-spacing: 0.03em;
     justify-content: start;
 }
 .soc-link.down{
-    background-color: rgba(255, 255, 255, 0.1); 
+  color: rgba(255, 255, 255, 0.1); 
 }
 
 .soc-icon.down{
     fill:var(--back-color);
-    background-color: rgba(255, 255, 255, 0.1);
+   
 }
 .information.footer{
     display: flex;
     gap: 156px;
     align-items: baseline;
+}
+
+
+.soc-link.down:hover, .soc-link:focus{
+    color: var(--button-color);
+    fill: var(--back-color);
 }
 /*portfolio*/
 
@@ -534,7 +576,7 @@ letter-spacing: 0.03em;
     margin-left: -30px;
 }
 
-.list.choice .iten{
+.list.choice .iten-box{
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100% / 3 - 30px);
@@ -548,7 +590,7 @@ letter-spacing: 0.03em;
     color: var(--primery-text-colot);
     margin-bottom: 4px;
     
-
+    
 }
 .choice.text{
     font-weight: 400;
@@ -571,14 +613,18 @@ letter-spacing: 0.03em;
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  .iten .content{
+  .iten-box .content{
     padding: 20px 24px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
   }
 
-
+.iten-box:hover,
+.iten-box:focus{
+    box-shadow: 2px 2px
+    rgba(0, 4, 4, 0.25);
+}
   /*customers*/
   .customers-title{
     margin-top: 94px;
@@ -590,7 +636,7 @@ letter-spacing: 0.03em;
   .customers-list{
 
 
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -601,6 +647,7 @@ letter-spacing: 0.03em;
   }
 
 .customers-box{
+    display: flex;
   width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -608,6 +655,25 @@ letter-spacing: 0.03em;
     justify-content: center;
     align-items: center;
 }
+.icon-customers{
+    justify-content: center;
+    align-items: center;
+    fill: var(--soc-link);
+}
+
+.customers-box:hover,
+.customers-box:focus{
+    border: 1px solid var(--button-color);
+}
+
+.customers-box:hover > .icon-customers,
+.customers-box:focus >  .icon-customers{
+ fill: var(--button-color);
+}
+
+
+
+
 
 
 
