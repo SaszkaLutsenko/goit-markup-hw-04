@@ -125,44 +125,35 @@ img{
     
 }
 
-.icon-envelope{
-     fill: currentColor;
-
-}
-.icon-smartphone{
-    fill: currentColor;
-}
-.iten-contakt.envelope:hover,
-.iten-contakt.envelope:focus{
-    color: var(--button-color);
-    fill: var(--button-color);
-
-}
-.iten-contakt.smartphone:hover,
-.iten-contakt.smartphone:focus{
-    color: var(--button-color);
-    fill: var(--button-color);
-}
-
 .navigetion.plus:hover,
 .navigetion.plus:focus{
     color: var(--button-color);
     fill: var(--button-color);
 }
-
+.iten-contakt.envelope,
 .contakt.mee {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--contact-color);
     letter-spacing: 0.02em;
-    
+}
+
+
+
+.icon-envelope{
+    fill: currentColor;
+}
+.icon-smartphone{
+   fill: currentColor;
+}
+.icon-smartphone{
+    margin-right: 10px;
 }
 
 .site-nav a.current {
     color: var(--button-color);
 }
-
 
 
 .logo-studio
@@ -186,6 +177,11 @@ img{
 
 .icon-smartphone{
     margin-left: 30px;
+}
+.iten-contakt.envelope:hover,
+.iten-contakt.envelope:focus{
+    color: var(--button-color);
+    fill: var(--button-color);
 }
 
 
@@ -271,8 +267,7 @@ img{
 .btn.secondary:active{
     background-color: var(--button-color);
     color: var(--back-color);
-    box-shadow: 0 4px
-    rgba(0, 2, 2, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .darkside{
@@ -520,15 +515,14 @@ letter-spacing: 0.03em;
 }
 
 .text-footer{
-    width: 700;
+    font-weight: 700;
     size: 14px;
-    height: 1.17;
+    line-height: 1.17;
     color: var(--back-color);
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
-.box.footer{
-    margin-top: -44px;
-}
+
 
 .soc-list.down{
     justify-content: start;
@@ -541,10 +535,13 @@ letter-spacing: 0.03em;
     fill:var(--back-color);
    
 }
-.information.footer{
+.container.footer{
     display: flex;
-    gap: 156px;
+    
     align-items: baseline;
+}
+.soc-contact-footer{
+    margin-left: 156px;
 }
 
 
@@ -622,8 +619,7 @@ letter-spacing: 0.03em;
 
 .iten-box:hover,
 .iten-box:focus{
-    box-shadow: 2px 2px
-    rgba(0, 4, 4, 0.25);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
   /*customers*/
   .customers-title{
