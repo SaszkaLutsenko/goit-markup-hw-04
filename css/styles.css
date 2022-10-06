@@ -140,7 +140,6 @@ img{
 }
 
 
-
 .icon-envelope{
     fill: currentColor;
 }
@@ -161,7 +160,7 @@ img{
     color:var(--primery-text-colot);
 }
 
-.iten-contakt{
+.navigetion.plus.mee{
     display: flex;
     
     justify-content: center;
@@ -366,6 +365,7 @@ letter-spacing: 0.03em;
 .staff.list{
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .title.staff{
@@ -626,12 +626,20 @@ letter-spacing: 0.03em;
 }
 
   /*customers*/
+  .section.customers{
+    padding-bottom: 0;
+  }
   .customers-title{
-    margin-top: 94px;
     margin-bottom: 50px;
     text-align: center;
-   
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     
+  }
+  .container.down{
+    align-items:baseline;
   }
   .customers-list{
 
